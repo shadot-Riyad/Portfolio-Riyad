@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu bar</title>
+    <link rel="stylesheet" href="menu bar.css">
+</head>
+<body>
+    <nav>
+        <div class="logo"> I 
+            <h1>Logo</hl> 
+            
+            </div>
+            <div id="myDIV">
+                <ul id="menulist"> 
+                   <button class="botn"> <li><a href="menu bar.html" class="active">Home</a></1i>       </button>
+                  
+                   <button class="botn"> <li><a href=""menu bar.html">About</a></li>      </button>
+                o
+                   <button class="botn"> <li><a href="Services.html">Services</a></1i></button>
+            o
+                   <button class="botn"> <li><a href="project.html">Project</a></1i>  </button>
+                  o
+                   <button class="botn"> <li><a href="contact.html">Contact</a></1i>  </button>
+                    
+                    </ul>
+
+
+            </div>
+            
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";
+        function toggleMenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "300px";
+            }
+            else{
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+<script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("botn");
+    for (var i = 0; i < btns.length; i++) {
+      botns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      if (current.length > 0) { 
+        current[0].className = current[0].className.replace("active", "");
+      }
+      this.className += "active";
+      });
+    }
+    </script>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+</body>
+</html>

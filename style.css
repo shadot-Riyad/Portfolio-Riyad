@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 0, 32);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* Site Name or Logo Start  */
+
+
+.left a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5em;
+  
+  
+
+}
+.left a:hover {
+  color: #01f899;
+
+
+
+}
+
+
+
+/* Site Name or Logo End  */
+
+
+
+
+/* New nav bar */
+
+nav {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #060638;
+  position: relative;
+  height: 70px;
+
+}
+nav ul{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+nav ul li {
+
+  list-style-type: none;
+ 
+ }
+ 
+ nav ul li a {
+     text-decoration: none;
+     color: #fff;
+     font-size: 1.2em;
+ }
+
+
+ nav ul li a:hover {
+  
+  color: #01f899;
+ 
+}
+nav ul li a.active {
+ color: #01f899;
+ text-decoration: 4px underline;
+ font: bold;
+
+}
+
+
+
+
+ .menu-icon{
+     display: none;
+ }
+ .menu-icon i {
+     color: #fff;
+     font-size: 30px;
+ 
+ 
+ }
+ @media(max-width:600px) {
+  nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      text-align: center;
+      background-color: #131047;
+      gap: 0;
+      overflow: hidden;
+     
+
+  }
+  nav ul li{
+      padding: 20px;
+  }
+  .menu-icon{
+      display: block;
+  }
+ 
+ }
+ #menulist{
+  transform: all 0.5s;
+ }
+
+
+
+/* New nav bar End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+
+main hr {
+  border: 0;
+  background: #9c97f1;
+  height: 1.2px;
+  margin: 60px 84px;
+}
+*/
+
+
+
+
+
+
+
+
+/* Wellcome Message section */
+
+
+
+
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 130px 0;
+}
+
+.leftsection {
+  font-size: 3rem;
+}
+
+.leftsection .buttons {
+  padding: 50px 0;
+
+
+}
+
+.leftsection .btn {
+
+  padding: 12px;
+  background-color: #1e2167;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+  font-size: 15px;
+  cursor: pointer;
+
+
+
+}
+
+.btn {
+  transition-duration: 0.4s;
+}
+
+.btn a:link,
+a:visited {
+  color: white;
+
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: rgb(92, 41, 92);
+  /* Green */
+  color: white;
+}
+
+.firstsection>div {
+  width: 30%;
+}
+
+.rightsection img {
+  width: 105%;
+}
+
+#element {
+  color: rgb(170, 107, 228);
+}
+
+.purple {
+  color: rgb(170, 107, 228);
+}
+
+
+
+
+
+
+
+
+
+/* Fotter Start */
+
+
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+
+.footer {
+  display: flex;
+  padding: 23px 122px;
+  justify-content: space-evenly;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+
+
+footer .footer-rights {
+  text-align: center;
+  color: grey;
+  padding: 12px 0;
+
+}
+
+
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+
+}
+
+.socialIcons a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0.9;
+
+
+}
+
+.socialIcons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+
+}
+
+.socialIcons a:hover i {
+  color: white;
+  transition: 0.5s;
+
+}
+
+.footerNav {
+  margin: 24px 0;
+}
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a :hover {
+  opacity: 1;
+}
+
+.footerBottom {
+  /*   background-color: #000; */
+  padding: 20px;
+  text-align: center;
+
+}
+
+.footerBottom p {
+  color: white;
+}
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+
+@media(max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column;
+  }
+
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+@media(max-width: 991px) {
+
+
+
+  .right ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .right ul {
+    flex-direction: column;
+  }
+
+}
+
+
+
+/* Fotter End */

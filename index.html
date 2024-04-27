@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shadot Riyad- Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+   
+  </head>
+
+  <body>
+    <header>
+      <!--  New Nav bar Start-->
+      <nav>
+        <div class="left"><a href="index.html">Riyad's Portfolio</a></div>
+
+        <ul id="menulist"> 
+          <li><a href="index.html" class="active">Home</a></1i> 
+          
+          <li><a href="about.html">About</a></li> 
+          
+          <li><a href="project.html">Project</a></1i> 
+          
+          <li><a href="contact.html">Contact</a></1i> 
+          
+          </ul>
+          <div class="menu-icon">
+              <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+          </div>
+
+
+
+
+
+
+
+
+      </nav>
+
+<!--  New Nav bar END-->
+
+      
+    </header>
+    <main>
+      <section class="firstsection">
+        <div class="leftsection">
+          Hey , I'm <span class="purple">Shadot Riyad</span>
+          <div>I'm a Passionate</div>
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn"><a href="Cv.pdf">Download Resume</a></button>
+            <button class="btn"><a href="https://shadot-riyad.github.io/Shadot-Riyad-Resume/">Visit Github</a></button>
+          </div>
+        </div>
+
+
+
+
+        <div class="rightsection"><img src="Pictures/Riyad1.png" alt="" />
+
+          
+
+
+
+
+        </div>
+      </section>
+      <hr />
+    <!--  <section class="secondSection">
+
+      
+           
+        
+
+      </section> 
+    
+    
+    -->
+    </main>
+    <footer>
+      <div class="footer">
+        
+        <div class="footer-second">
+          <div class="footercontainer">
+            <div class="socialIcons">
+                <a href="https://www.facebook.com/Official.Riyad"><i class="fa-brands fa-facebook"></i></a>
+                <a href="hhttps://www.instagram.com/shadot_riyad"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.twitter.com/shadot_riyad"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/shadot-Riyad?tab=projects"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/Shadot-Riyad7"><i class="fa-brands fa-linkedin"></i></a>
+
+            </div>
+            <div class="footerNav">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+
+                    </ul>
+
+            </div>
+
+          </div>
+        </div>
+        
+      <!--This is a comment. Comments are not displayed in the browser <div class="footer-fourth">
+            >
+              --> 
+        </div>
+      </div>
+
+      <div class="footerBottom"> <p>Copyright &copy;2024; Designed by <span class="designer">Shadot Riyad</span></p></div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Devloper", "Support Condinator"],
+        typeSpeed: 50,
+      });
+
+
+      
+
+    </script>
+<!-- Menu bar! -->
+
+     <script>
+      let menulist = document.getElementById("menulist")
+      menulist.style.maxHeight = "0px";
+      function toggleMenu(){
+          if(menulist.style.maxHeight == "0px")
+          {
+              menulist.style.maxHeight = "300px";
+          }
+          else{
+              menulist.style.maxHeight = "0px";
+          }
+      }
+  </script>
+  <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>
+  <!-- Menu bar! -->
+
+  </body>
+</html>
