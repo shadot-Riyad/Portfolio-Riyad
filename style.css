@@ -240,7 +240,7 @@ a:visited {
 
 .footer {
   display: flex;
-  padding: 23px 122px;
+ 
   justify-content: space-evenly;
 }
 
